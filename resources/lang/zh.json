@@ -1,0 +1,17 @@
+{
+  "login": "登陆",
+  "register": "注册",
+  "my": "我",
+  "collection": "收藏",
+  "input_name": "请输入用户名",
+  "input_pwd": "请输入密码",
+  "input_pwd_confirm": "请再次输入密码",
+  "name": "用户名",
+  "pwd": "密码",
+  "movie": "电影",
+  "movie_action": "动作",
+  "movie_love": "爱情",
+  "movie_less": "同性",
+  "movie_disaster": "灾难",
+  "movie_all": "全部"
+}

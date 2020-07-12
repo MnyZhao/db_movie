@@ -1,0 +1,17 @@
+{
+  "login": "Terras",
+  "register": "Registar",
+  "my": "Sim.",
+  "collection": "Colecção",
+  "input_name": "Por favor, inserir Nome de usuário",
+  "input_pwd": "Por favor, inserir senha",
+  "input_pwd_confirm": "Por favor, inserir senha",
+  "name": "Nome",
+  "pwd": "Senha",
+  "movie": "电影",
+  "movie_action": "动作",
+  "movie_love": "爱情",
+  "movie_less": "同性",
+  "movie_disaster": "灾难",
+  "movie_all": "全部"
+}

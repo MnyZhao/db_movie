@@ -1,0 +1,17 @@
+{
+  "login": "Login",
+  "register": "Register",
+  "my": "My",
+  "collection": "Collection",
+  "input_name": "Please Input User Name",
+  "input_pwd": "Please Input Password",
+  "input_pwd_confirm": "Please Input Password",
+  "name": "Name ",
+  "pwd": "PassWord",
+  "movie": "Movie",
+  "movie_action": "动作",
+  "movie_love": "爱情",
+  "movie_less": "同性",
+  "movie_disaster": "灾难",
+  "movie_all": "全部"
+}
