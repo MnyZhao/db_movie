@@ -1,4 +1,3 @@
-import 'package:dbmovie/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -12,7 +11,6 @@ Widget getEmptyWidget(bool isEmpty, {String data}) {
       : Container();
 }
 
-/// 获取纵横向间隔 Container
 /// [width]获取横向间隔
 /// [height] 获取纵向间隔线
 /// [color] 间隔颜色
@@ -33,14 +31,13 @@ Widget spacingContainer(
   );
 }
 
-///获取纵横向间隔 SizedBox
 /// [width]获取横向间隔
 /// [height] 获取纵向间隔线
 Widget spacingBox({double height = 0.0, double width = 0.0}) {
   return SizedBox(width: width, height: height);
 }
 
-/// Text内容展示
+///
 /// [text] 展示内容
 /// [overflow] 溢出文本显示方式 默认显示省略号
 /// [maxline] 允许展示行数 默认 1
@@ -49,19 +46,22 @@ Widget spacingBox({double height = 0.0, double width = 0.0}) {
 /// [fontWeight] 文字样式 默认加粗
 Widget showText(String text,
     {TextOverflow overflow = TextOverflow.ellipsis,
-    int maxLine,
+    int maxLine = 1,
     Color textColor,
     double fontSize = 14.0,
     FontWeight fontWeight = FontWeight.normal}) {
   return Expanded(
+      flex: 0,
       child: Text(
-    text,
-    maxLines: maxLine,
-    overflow: overflow,
-    style:
-        TextStyle(color: textColor, fontSize: fontSize, fontWeight: fontWeight),
-  ));
+        text,
+        maxLines: maxLine,
+        overflow: overflow,
+        style: TextStyle(
+            color: textColor, fontSize: fontSize, fontWeight: fontWeight),
+      ));
 }
 
-/// 获取TextField
-Widget inputWidget({bool isPwd}) {}
+/// 获取Appbar
+getAppBar(String titleMsg) {
+  return AppBar(title: Text(titleMsg));
+}

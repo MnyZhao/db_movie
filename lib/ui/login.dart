@@ -1,13 +1,10 @@
 import 'package:dbmovie/local/my_locations.dart';
-import 'package:dbmovie/net/api/api.dart';
-import '../main.dart';
-import 'file:///D:/Flutter/flutter_project/db_movie/db_movie/lib/net/api/resposity/user_resposity.dart';
-import 'package:dbmovie/net/dio/dio_manager.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../utils.dart';
+import '../net/api/resposity/user_resposity.dart';
 import 'register.dart';
+import 'widget/widget_utils.dart';
 
 class Login extends StatefulWidget {
   @override

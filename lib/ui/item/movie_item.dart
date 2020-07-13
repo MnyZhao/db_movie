@@ -2,7 +2,7 @@ import 'package:dbmovie/net/model/resp/list_movie.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../utils.dart';
+import '../widget/widget_utils.dart';
 
 class MovieItem extends StatelessWidget {
   Movie movie;

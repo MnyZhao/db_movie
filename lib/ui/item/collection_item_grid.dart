@@ -1,7 +1,7 @@
 import 'package:dbmovie/net/model/resp/collection.dart';
 import 'package:flutter/material.dart';
 
-import '../../utils.dart';
+import '../widget/widget_utils.dart';
 
 class CollectionItem extends StatelessWidget {
   Collection collection;
@@ -22,9 +22,7 @@ class CollectionItem extends StatelessWidget {
         children: [
           _getHeroPic(collection),
           Spacer(),
-          Center(
-            child: showText("肖申克的救赎"),
-          ),
+          showText("肖申克的救赎"),
           Spacer(),
         ],
       ),
@@ -37,12 +35,10 @@ Widget _getHeroPic(Collection c) {
 }
 
 Widget _getImage(String url) {
-  return Container(
-    child: FadeInImage.assetNetwork(
-      placeholder: 'assets/place_holder.jpg',
-      image: url,
-      fit: BoxFit.cover,
-    ),
+  return FadeInImage.assetNetwork(
+    placeholder: 'assets/place_holder.jpg',
+    image: url,
+    fit: BoxFit.cover,
   );
 }
 
@@ -70,9 +66,7 @@ main() => runApp(
                 childAspectRatio: 1 / 1.75,
                 crossAxisSpacing: 5.0),
             itemBuilder: (context, index) {
-              return Expanded(
-                child: CollectionItem(),
-              );
+              return CollectionItem();
             },
           ),
         ),

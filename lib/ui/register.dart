@@ -2,7 +2,8 @@ import 'package:dbmovie/local/my_locations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import '../utils.dart';
+import 'widget/widget_utils.dart';
+
 
 class Register extends StatefulWidget {
   @override
